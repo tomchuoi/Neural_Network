@@ -16,12 +16,12 @@ data_labels= {
 }
 
 # Read the image
-image_data = cv2.imread('ohshiet.png', cv2.IMREAD_GRAYSCALE)
+image_data = cv2.imread('test.png', cv2.IMREAD_GRAYSCALE) # Add the image here
 
 # Resize the image
 image_data = cv2.resize(image_data, (28, 28))
 
-
+# Invert image color
 image_data = 255 - image_data
 
 # Reshape and scale the data
