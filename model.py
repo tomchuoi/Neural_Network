@@ -2,9 +2,24 @@ from neural_classes import *
 from colorama import Fore, Style
 import pickle
 import copy
+import matplotlib.pyplot as plt
+import cv2
 
 #This model combines everything from classes :v
 class Model:
+    @staticmethod
+    def display_image(image_data):
+        #reshape and convert the image data to 28 pixels
+        image_data = image_data.reshape((28, 28)).astype(np.uint8)
+        image_data = 255 - image_data
+        
+        #display the image 
+        plt.imshow(image_data, cmap = 'gray')
+        plt.axis('off')
+        plt.show()
+        
+        plt.imshow(image_data)
+    
     @staticmethod
     def load(path):
         with open(path, 'rb') as f:
