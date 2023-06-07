@@ -19,10 +19,10 @@ data_labels= {
 image_data = cv2.imread('test.png', cv2.IMREAD_GRAYSCALE) # Add the image here
 
 # Resize the image
-image_data = cv2.resize(image_data, (28, 28))
+resize_image_data = cv2.resize(image_data, (28, 28))
 
 # Invert image color
-image_data = 255 - image_data
+image_data = 255 - resize_image_data
 
 # Reshape and scale the data
 image_data = (image_data.reshape(1, -1).astype(np.float32) - 127.5) / 127.5
@@ -35,4 +35,7 @@ predictions = model.output_layer_activation.predictions(confidences)
 prediction = data_labels[predictions[0]]
 
 print(prediction)
+
+# Display the sample's image
+model.display_image(resize_image)
 
