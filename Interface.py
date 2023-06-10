@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog, Label
+from tkinter import filedialog
 from PIL import Image, ImageTk
 import numpy as np
 from neural_classes import *
