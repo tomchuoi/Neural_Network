@@ -13,6 +13,7 @@ def load_image():
     file_path = filedialog.askopenfilename()
     if file_path:
         # Load the image
+        original_image = cv2.imread(file_ptah, cv2.IMREAD_UNCHANGED)
         image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
 
         # Resize the image
@@ -23,7 +24,7 @@ def load_image():
         predict_image(input_data)
 
         # Display the loaded image
-        display_image(image)
+        display_image(original_image)
 
 def predict_image(image_data):
     confidences = model.predict(image_data)
