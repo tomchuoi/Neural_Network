@@ -18,14 +18,11 @@ data_labels= {
 # Read the image
 image_data = cv2.imread('test.png', cv2.IMREAD_GRAYSCALE) # Add the image here
 
-# Resize the image
-resize_image_data = cv2.resize(image_data, (28, 28))
-
-# Invert image color
-image_data = 255 - resize_image_data
+# Resize the image and invert the color
+resize_image_data = 255 - cv2.resize(image_data, (28, 28))
 
 # Reshape and scale the data
-image_data = (image_data.reshape(1, -1).astype(np.float32) - 127.5) / 127.5
+image_data = (resize_image_data.reshape(1, -1).astype(np.float32) - 127.5) / 127.5
 
 # Load the trained model
 model = Model.load('trained.model')
