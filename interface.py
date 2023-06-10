@@ -41,12 +41,12 @@ def display_image(image):
     # Resize the image to fit the display
     pil_image = pil_image.resize((200, 200))
 
-    # Create Tkinter-compatible image
-    tk_image = ImageTk.PhotoImage(pil_image)
+    # Create the displayed image
+    displayed_image = ImageTk.PhotoImage(pil_image)
 
     # Update the image label
-    image_label.config(image=tk_image)
-    image_label.image = tk_image
+    image_label.config(image=displayed_image)
+    image_label.image = displayed_image
 
 # Create the main window
 root = tk.Tk()
