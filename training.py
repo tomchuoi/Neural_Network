@@ -38,11 +38,9 @@ model.finalize()
 # Train the model
 model.train(X, y, validation_data=(X_test, y_test), epochs=20, batch_size=128, print_every=100)
 
-"""
 # Using this when you want to train and save another model for prediction
 # Save the parameters
 model.save_parameters('model.params')
 
 # Save the trained model
 model.save_model('trained.model')
-"""
