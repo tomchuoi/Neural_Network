@@ -1,5 +1,18 @@
 import numpy as np
 
+data_labels = {
+    0: 'Áo cộc tay',
+    1: 'Quần dài',
+    2: 'Áo len',
+    3: 'Áo váy',
+    4: 'Áo khoác',
+    5: 'Sandal',
+    6: 'Áo dài tay',
+    7: 'Giày',
+    8: 'Túi',
+    9: 'Bốt'
+}
+
 """--------------------this part is for calculating accuracy--------------------"""
 class Accuracy:
     def calculate(self, predictions, y):
