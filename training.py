@@ -4,10 +4,7 @@ from dataset import *
 import os
 
 # Delete the old training data and parameters
-if os.path.exist('trained.model'):
-    os.remove('trained.model')
-if os.path.exist('model.params'):
-    os.remove('model.params')
+model.renew()
     
 # Create dataset
 X, y, X_test, y_test = create_dataset('fashion_mnist_images')
