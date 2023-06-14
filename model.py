@@ -8,6 +8,15 @@ import cv2
 #This model combines everything from classes :v
 class Model:
     @staticmethod
+    def renew():
+        if os.path.exists('trained.model'):
+            os.remove('trained.model')
+        if os.path.exists('model.params'):
+            os.remove('model.params')
+        if os.path.exists("__pycache__"):
+            shutil.rmtree('__pycache__')
+            
+    @staticmethod
     def load(path):
         with open(path, 'rb') as f:
             model = pickle.load(f)
