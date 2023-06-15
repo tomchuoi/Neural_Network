@@ -15,9 +15,10 @@ This neural network model uses the famous MNIST fashion dataset as the training 
     
 *Example:
   - For example, in the training.py you can modify the values in these lines:
-      "model.add(Layer_Dense(X.shape[1], 128, L2_weight_regularizer= 5e-4, L2_bias_regularizer= 5e-4))" tune the L2_weight_regularizer to 6e-7 or aything you want.
-      "optimizer = Optimizer_Adam(learning_rate=0.005, decay=4e-3)" change the decay, learning_rate to any values that you want like 0.0004 or anything.
-  - Or you can choose any other optimizer, loss and accuracy functions, you can find them in the neural_classes.py.
+      "model.add(Layer_Dense(X.shape[1], 128, L2_weight_regularizer= 5e-4, L2_bias_regularizer= 5e-4))" tune the L2_weight_regularizer to 6e-7 or anything you want.
+      "optimizer = Optimizer_Adam(learning_rate=0.005, decay=4e-3)" you can change the decay and learning_rate to any values you prefer, such as 0.0004 or any other value.
+  - Or you can choose any other optimizer, loss and accuracy functions, you can find them in the neural_classes.py. 
+  - Feel free to experiment with these parameters and functions to improve the performance of the model according to your needs and preferences.
 
   
       
