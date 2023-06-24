@@ -4,10 +4,10 @@ Neural network from scratches in python
 This neural network model uses the famous MNIST fashion dataset as the training data to classify different clothing fashion. 
 
 *How to use:
-  - First, download the MNIST fashion dataset and run the training.py, you can set the paramaters to any values that you want.
-    (Such as learning_rate, decay, L2_bias_regularizer, L2_weight_regularizer,...)
-  - After that, the training.py will automatically saves the model in 'trained.model' and its parameters in 'model.params' files. 
-    All you need to do now is run the interface.py and select the image you want to classify.
+  - Start by running config.py to download the essential modules required for the program.
+  - Next, download the MNIST fashion dataset. This dataset will be used for training the model. 
+  - Customize parameters in training.py as needed and before running it(e.g., learning rate, decay, regularizers).
+  - Run interface.py to classify images. Select the desired image in the interface.
     
 *Note: 
   - This is my first neural network program, so there may still be some errors present. I have experimented with various parameter values to rectify any issues, 
