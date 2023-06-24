@@ -1,4 +1,5 @@
-from model import Model, ImageClassifierUI
+from model import Model
+from image_classifier import ImageClassifierUI
 
 if __name__ == "__main__":
     # Load the trained model
