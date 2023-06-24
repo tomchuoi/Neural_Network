@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import os
-import matplotlib.pyplot as plt
 
 def load_dataset(dataset, path):
     #scan all the directories and put them in labels
