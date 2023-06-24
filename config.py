@@ -20,4 +20,4 @@ for module_name in modules_to_import:
 
 
 # If any of the modules in the 'modules_to_import' list are not imported,
-# they will be imported dynamically and the success message will be printed.
+# they will be imported automatically and the success message will be printed.
