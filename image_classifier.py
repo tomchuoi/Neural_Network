@@ -1,4 +1,11 @@
- class ImageClassifierUI:
+import tkinter as tk
+from tkinter import filedialog
+from PIL import Image, ImageTk
+import cv2
+import numpy as np
+from neural_classes import *
+
+class ImageClassifierUI:
     def __init__(self, model):
         # Create the main window
         self.root = tk.Tk()
